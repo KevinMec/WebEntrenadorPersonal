@@ -1,0 +1,21 @@
+.carousel-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+.carousel-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+  object-fit: contain;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

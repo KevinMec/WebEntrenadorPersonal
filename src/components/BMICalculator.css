@@ -1,0 +1,78 @@
+.bmi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.bmi-chart, .bmi-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  flex: 1 1 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bmi-chart h2, .bmi-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0c1e44;
+}
+
+.bmi-chart table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.bmi-chart th, .bmi-chart td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #dee2e6;
+  text-align: left;
+}
+
+.bmi-form p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.bmi-form input,
+.bmi-form select {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.bmi-form button {
+  width: 100%;
+  background-color: #2980b9;
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bmi-form button:hover {
+  background-color: #1f6391;
+}
+
+.bmi-result {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #eaf4fc;
+  border-left: 4px solid #2980b9;
+  border-radius: 4px;
+}

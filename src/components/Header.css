@@ -1,0 +1,44 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1.5rem 3rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.brand-logo {
+  height: 100px;
+  width: auto;
+}
+
+.brand-text p {
+  margin: 0;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #2f3640;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nav-menu a:hover {
+  color: #00b894;
+}
