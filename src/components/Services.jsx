@@ -5,6 +5,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 import { Navigation, Autoplay } from 'swiper/modules';
 
+import entrenamiento from '../assets/img/EntrenamientoMrFrank.png';
+import alimentacion from '../assets/img/Alimentacionfrank.png';
+import seguimiento from '../assets/img/SeguimientoFrank.png';
+import suplementos from '../assets/img/Suplementosfrank.png';
+import quimica from '../assets/img/QuimicaFrank.png';
+import tarima from '../assets/img/PreparacionTarimafrank.png';
+
 function Services() {
   return (
     <section id="services" className="services-section">
@@ -25,49 +32,51 @@ function Services() {
         >
           <SwiperSlide>
             <div className="service-card">
-              <img src="/assets/img/EntrenamientoMrFrank.png" alt="Entrenamiento de fuerza" />
+              <img src={entrenamiento} alt="Entrenamiento de fuerza" />
               <h3>Entrenamiento Personalizado</h3>
               <p>Programas de ejercicio hechos a tu medida, enfocados en tus metas.</p>
             </div>
           </SwiperSlide>
+
           <SwiperSlide>
             <div className="service-card">
-              <img src="/assets/img/Alimentacionfrank.png" alt="Nutrición" />
+              <img src={alimentacion} alt="Nutrición" />
               <h3>Planes Nutricionales</h3>
               <p>Asesoría nutricional para acompañar tu proceso de transformación física.</p>
             </div>
           </SwiperSlide>
+
           <SwiperSlide>
             <div className="service-card">
-              <img src="/assets/img/SeguimientoFrank.png" alt="Seguimiento" />
+              <img src={seguimiento} alt="Seguimiento" />
               <h3>Seguimiento Progresivo</h3>
               <p>Evaluaciones semanales para medir y ajustar tu progreso.</p>
             </div>
-            </SwiperSlide>
-          <SwiperSlide>
-  <div className="service-card">
-    <img src="/assets/img/Suplementosfrank.png" alt="Suplementos" />
-    <h3>Recomendación de Suplementos</h3>
-    <p>Te guiamos en el uso adecuado de suplementos para mejorar tu rendimiento y recuperación.</p>
-  </div>
-            </SwiperSlide>
+          </SwiperSlide>
 
           <SwiperSlide>
-           <div className="service-card">
-               <img src="/assets/img/QuimicaFrank.png" alt="Asesoría Química" />
-               <h3>Asesoría Química Deportiva</h3>
-               <p>Educación sobre el uso responsable de sustancias y procesos hormonales en el fisicoculturismo.</p>
+            <div className="service-card">
+              <img src={suplementos} alt="Suplementos" />
+              <h3>Recomendación de Suplementos</h3>
+              <p>Te guiamos en el uso adecuado de suplementos para mejorar tu rendimiento y recuperación.</p>
             </div>
-</SwiperSlide>
+          </SwiperSlide>
 
-<SwiperSlide>
-  <div className="service-card">
-    <img src="\assets\img\PreparacionTarimafrank.png" alt="Preparación para Tarima" />
-    <h3>Preparación para Competencia</h3>
-    <p>Te ayudamos a llegar listo para tarima: posing, bronceado y definición final.</p>
-  </div>
-</SwiperSlide>
+          <SwiperSlide>
+            <div className="service-card">
+              <img src={quimica} alt="Asesoría Química" />
+              <h3>Asesoría Química Deportiva</h3>
+              <p>Educación sobre el uso responsable de sustancias y procesos hormonales en el fisicoculturismo.</p>
+            </div>
+          </SwiperSlide>
 
+          <SwiperSlide>
+            <div className="service-card">
+              <img src={tarima} alt="Preparación para Tarima" />
+              <h3>Preparación para Competencia</h3>
+              <p>Te ayudamos a llegar listo para tarima: posing, bronceado y definición final.</p>
+            </div>
+          </SwiperSlide>
         </Swiper>
       </div>
     </section>

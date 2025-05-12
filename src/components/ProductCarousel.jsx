@@ -6,17 +6,28 @@ import "swiper/css/autoplay";
 import { Navigation, Autoplay } from "swiper/modules";
 import "./ProductCarousel.css";
 
-const imageNames = [
-  "logo_hybrid_colágeno.png",
-  "logo_hybrid_proteína.png",
-  "logo_hybrid_creatina.png",
-  "logo_hybrid_pre-entreno.png",
-  "logo_hybrid_multivitamínico.png",
-  "logo_hybrid_bcaa.png",
-  "logo_hybrid_omega_3.png",
-  "logo_hybrid_termogénico.png",
-  "logo_hybrid_ganador_de_peso.png",
-  "logo_hybrid_glutamina.png"
+import colageno from "../assets/img/carrusel-productos/logo_hybrid_colágeno.png";
+import proteina from "../assets/img/carrusel-productos/logo_hybrid_proteína.png";
+import creatina from "../assets/img/carrusel-productos/logo_hybrid_creatina.png";
+import preEntreno from "../assets/img/carrusel-productos/logo_hybrid_pre-entreno.png";
+import multivitaminico from "../assets/img/carrusel-productos/logo_hybrid_multivitamínico.png";
+import bcaa from "../assets/img/carrusel-productos/logo_hybrid_bcaa.png";
+import omega3 from "../assets/img/carrusel-productos/logo_hybrid_omega_3.png";
+import termogenico from "../assets/img/carrusel-productos/logo_hybrid_termogénico.png";
+import ganadorPeso from "../assets/img/carrusel-productos/logo_hybrid_ganador_de_peso.png";
+import glutamina from "../assets/img/carrusel-productos/logo_hybrid_glutamina.png";
+
+const productImages = [
+  colageno,
+  proteina,
+  creatina,
+  preEntreno,
+  multivitaminico,
+  bcaa,
+  omega3,
+  termogenico,
+  ganadorPeso,
+  glutamina,
 ];
 
 function ProductCarousel() {
@@ -31,10 +42,10 @@ function ProductCarousel() {
         autoplay={{ delay: 3000 }}
         loop={true}
       >
-        {imageNames.map((name, idx) => (
+        {productImages.map((img, idx) => (
           <SwiperSlide key={idx}>
             <div className="carousel-slide">
-              <img src={`/assets/img/Carrusel productos/${name}`} alt={name} />
+              <img src={img} alt={`Producto ${idx + 1}`} />
             </div>
           </SwiperSlide>
         ))}

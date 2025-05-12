@@ -1,4 +1,5 @@
 import './Contact.css';
+import contactoEntrenador from '../assets/img/contacto-entrenador.jpg';
 
 function Contact() {
   return (
@@ -11,7 +12,7 @@ function Contact() {
         </a>
       </div>
       <img
-        src="/assets/img/contacto-entrenador.jpg"
+        src={contactoEntrenador}
         alt="Contacto entrenador"
         className="contact-image"
       />
